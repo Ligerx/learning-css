@@ -2,4 +2,10 @@
 @import "../bower_components/foundation/scss/foundation";
 @import "app/assets/stylesheets/bourbon";
 
-//Your Custom Styles bellow
+//Your Custom Styles below
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+}
