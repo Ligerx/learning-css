@@ -40,19 +40,13 @@ div {
   //supposed to help firefox antialiasing
   outline: 1px solid transparent;
 
-  //alignment
-  // position: relative;
-  // top: 50%;
+  //alignment, works for fixed size elements
   position: absolute;
   top:0;
   bottom: 0;
   left: 0;
   right: 0;
-
   margin: auto;
-
-
-  @include transform(translateY(-50%));
 
   @include animation(square-to-circle 2s 1s infinite  cubic-bezier(1, .015, .295, 1.225) alternate);
 }
