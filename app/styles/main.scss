@@ -4,8 +4,33 @@
 
 //Your Custom Styles below
 
+@include keyframes(square-to-circle) {
+  0% {
+    border-radius: 0 0 0 0;
+    background: coral;
+  }
+  25% {
+    border-radius: 50% 0 0 0;
+    background: darksalmon;
+  }
+  50% {
+    border-radius: 50% 50% 0 0;
+    background: indianred;
+  }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    background: lightcoral;
+  }
+  100% {
+    border-radius: 50%;
+    background: darksalmon;
+  }
+}
+
 div {
   width: 200px;
   height: 200px;
   background-color: coral;
+
+  @include animation(square-to-circle 2s 1s infinite alternate);
 }
